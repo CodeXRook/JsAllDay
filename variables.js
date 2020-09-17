@@ -1,0 +1,6 @@
+/*
+VARIABLES
+JavaScript variables are containers for storing data values.
+Variables are named containers that you can place data in and 
+refer to the data by naming the containers.
+ */
