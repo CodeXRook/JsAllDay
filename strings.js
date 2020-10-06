@@ -20,3 +20,12 @@ var response = 'Billy said "I am sick".';
 
 var greeting = "It's good to meet you!";
 greeting.length;//22
+
+// Sting Method
+// toUpperCase()
+
+var greeting = 'Good to see you!';
+greeting;// 'Good to see you!';
+
+var shoutGreeting = greeting.toUpperCase();
+shoutGreeting;//'GOOD TO SEE YOU!';
