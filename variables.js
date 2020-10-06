@@ -20,7 +20,7 @@ const mac = laptop
 // var var = 'car';
 
 var firstPet = 'Bear';
-var baseBallTeam = 'Dodgers';
+var baseballTeam = 'Dodgers';
 var favoriteDayOfTheWeek = 'friday';
 var favorite_color = 'green';
 var typeOfVehical = 'car';
