@@ -61,5 +61,16 @@ shoutGreeting;//'GOOD TO SEE YOU!';
 // challenge 
 // find length of greeting3;
 // use toUpperCase() method to turn greeting3 into an uppercase string
-greeting3.length; // 120
-greeting3.toUpperCase();
+// greeting3.length; // 120
+// greeting3.toUpperCase();
+
+// Getting a Single Character from a String
+var codeWord1 = 'are';
+var codeWord2 = 'tubas';
+var codeWord3 = 'unsafe';
+var codeWord4 = "?!";
+console.log(codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1]);
+
+// Cutting up Strings
+var longString = "My long string is long";
+console.log(longString.slice(3, 14));
