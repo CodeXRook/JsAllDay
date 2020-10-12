@@ -73,4 +73,16 @@ console.log(codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1]);
 
 // Cutting up Strings
 var longString = "My long string is long";
-console.log(longString.slice(3, 14));
+console.log(longString.slice(3, 14)); // "long string"
+
+//Changing Strings to All Capital or All lowercase letters
+console.log("Hello there, wus good with party this weekend bro".toUpperCase());
+
+console.log("YOO, BRO, PLEASE STOP SHOUTING USE LOWER CASE".toLowerCase());
+
+var sillyStrings = "hELLO, My G the LAKERS WON the chip.";
+console.log(sillyStrings[0].toUpperCase()+ sillyStrings.slice(1).toLowerCase());
+ 
+
+var newString = "oKAY, LET'S DO ANOTHER TEST";
+console.log(newString[0].toUpperCase()+ newString.slice(1).toLowerCase());
