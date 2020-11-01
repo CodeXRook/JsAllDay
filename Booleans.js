@@ -8,8 +8,16 @@
 var hasShower = true;
 var hasBackpack = false;
 hasShower && hasBackpack;
-//false
+// //false
 
 var hadShower = true;
-var hasBackpack = true; hadShower && hasBackpack; true
-//ture
+var hasBackpack = true; hadShower && hasBackpack; 
+// //true
+
+/* The Boolean Operator || means "Or" AKA "PIPES"
+ the character itself is called pipe. */
+
+ var hasApple = true;
+ var hasOrange = false;
+ hasApple || hasOrange;
+ //true
