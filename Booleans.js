@@ -36,3 +36,15 @@ var hasApple = false;
 var hasOrange = true;
 var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange); shouldGoToSchool;
 //true
+
+// Greater Than
+var height = 65;
+var heightRestriction = 60;
+height > heightRestriction;
+
+// What if a rider were exactly 60 inches tall, though?
+
+var height = 60;
+var heightRestriction = 60;
+height > heightRestriction;
+// false
