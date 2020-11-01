@@ -9,3 +9,7 @@ var hasShower = true;
 var hasBackpack = false;
 hasShower && hasBackpack;
 //false
+
+var hadShower = true;
+var hasBackpack = true; hadShower && hasBackpack; true
+//ture
