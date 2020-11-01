@@ -2,5 +2,10 @@
 // && AkA (AND)
 
 
-var javaScriptIsCool = true;
-console.log(javaScriptIsCool);
+// var javaScriptIsCool = true;
+// console.log(javaScriptIsCool);
+
+var hasShower = true;
+var hasBackpack = false;
+hasShower && hasBackpack;
+//false
