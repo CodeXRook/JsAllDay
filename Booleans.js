@@ -21,3 +21,18 @@ var hasBackpack = true; hadShower && hasBackpack;
  var hasOrange = false;
  hasApple || hasOrange;
  //true
+
+ /* ! (not)
+! just means “not.” You can call it “not,” 
+but lots of people call it “bang.” */
+var isWeekend = true;
+var needToShowerToday = !isWeekend;
+needToShowerToday;
+
+
+var isWeekend = false;
+var hadShower = true;
+var hasApple = false;
+var hasOrange = true;
+var shouldGoToSchool = !isWeekend && hadShower && (hasApple || hasOrange); shouldGoToSchool;
+//true
