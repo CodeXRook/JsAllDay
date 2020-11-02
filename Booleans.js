@@ -48,3 +48,61 @@ var height = 60;
 var heightRestriction = 60;
 height > heightRestriction;
 // false
+
+/* Luckily, JavaScript has another operator, 
+>=, which means “greater than or equal to”:
+----------------------------------------------
+we can also use the operator <=, 
+which means “less than or equal to”
+*/
+
+var height = 60;
+var heightRestriction = 60;
+height >= heightRestriction;
+// true
+
+/*-------------------------*/
+
+var height = 48;
+var heightRestriction = 48; height <= heightRestriction;
+// true
+
+/* equal To
+To find out if two numbers are exactly the same, 
+use the triple equal sign (===), 
+which means “equal to.”
+*/
+
+var mySecretNumber = 5;
+var chicoGuess = 3;
+mySecretNumber === chicoGuess;
+//false
+
+var harpoGuess = 7;
+mySecretNumber === harpoGuess;
+//false
+
+var grouchoGuess = 5;
+mySecretNumber === grouchoGuess;
+//true
+
+/* Double equals
+Now to confuse things a bit: 
+there’s another JavaScript operator (double equals, or ==) 
+that means “equal-ish.” 
+Use this to see whether two VALUES are the same
+*/
+
+var stringNumber = "5";
+var actualNumber = 5;
+stringNumber === actualNumber;
+//false
+
+stringNumber == actualNumber;
+//true
+
+0 == false;
+//true
+
+'false' == false;
+//false
