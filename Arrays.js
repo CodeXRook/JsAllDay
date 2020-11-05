@@ -99,4 +99,7 @@ animals;
 
 //To add an element to the beginning of an array, 
 //you can use .unshift(element), like this:
+animals["cod", "IceFish", "BearFace"]
+animals.unshift("Tiger");
 
+// Removing elements from an Array
