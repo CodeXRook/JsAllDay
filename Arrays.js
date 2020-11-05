@@ -68,3 +68,35 @@ var dinosaursAndNumbers = [3, "dinosaurs", ["triceratops",
 //dinosaursAndNumbers[2][0]; returns only the first element of that inner array,
 //which is "triceratops".
 
+//finding the length of an Array
+
+var maniacs = ['Yakko', 'Wako', 'Dot'];
+maniacs[0];
+// "Yakko"
+maniacs[1];
+// "Wako"
+maniacs[2];
+// "Dot"
+
+maniacs.length;
+// 3
+
+
+maniacs[maniacs.length - 1];
+"Dot"
+
+
+//Adding elements to an Array
+// To add an element to the end of an array, 
+// You can use the push method.
+
+var animals =[];
+animals.push("cod");
+animals.push("IceFish");
+animals.push("BearFace");
+animals;
+// animals["cod", "IceFish", "BearFace"];
+
+//To add an element to the beginning of an array, 
+//you can use .unshift(element), like this:
+
