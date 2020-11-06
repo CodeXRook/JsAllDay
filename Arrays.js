@@ -131,3 +131,85 @@ animals;
 
 
 //Adding Arrays
+/*To add two arrays together to make a new, 
+single array, 
+you can use firstArray.concat(otherArray) 
+*/
+
+/*For example, say we have a list of some furry animals and 
+another list of some scaly animals, and we want to combine them.
+If we put all of our furry animals in an array called furryAnimals and 
+all of our scaly ani- mals in an array called scalyAnimals, 
+entering furryAnimals.concat(scalyAnimals) 
+will create a new array that has the values from the first array at
+the beginning and the values from the second array at the end. 
+*/
+
+var furryAnimals = ["Aplaca", "Right-tailed Lemur", "Yeti"];
+var scalyAnimals = ["Boa Constrictor", "Godzilla"];
+var furryAndScalyAnimals = furryAnimals.concat(scalyAnimals);
+furryAndScalyAnimals;
+//(5)["Aplaca", "Right-tailed Lemur", "Yeti", "Boa Constrictor", "Godzilla"]
+
+// Joining Multiple Arrays
+// You can use concat to join more than two arrays together
+ var furryAnimals = ["Alpaca", "Right-tailed Lemur", "Yeti"];
+ var scalyAnimals = ["Boa Constrictor", "Godzilla"];
+ var featheredAnimals = ["Macaw", "Dodo"];
+ var allAnimals = furryAnimals.concat(scalyAnimals, featheredAnimals);
+ allAnimals; 
+ //(7)["Alpaca", "Ring-tailed Lemur", "Yeti", "Boa Constrictor", "Godzilla", "Macaw", "Dodo"]
+
+ //My Example
+ var myBooks = ["David Goggins", "sage", "Count Of Monte Cristo"];
+ var homieBooks = ["GooseBumps", "Harry Porter", "Marvel"];
+ var allBooks = myBooks.concat(homieBooks);
+ allBooks;
+// (6) ["David Goggins", "sage", "count of monte cristo", "GooseBumps", "Harry Porter", "Marvel"]
+
+//Finding the Index of an element in an Array
+//To find the index of an element in an array, use .indexOf(element).
+
+var colors = ["red", "green", "blue"];
+colors.indexOf("blue");
+// 2
+colors.indexOf("green");
+// 1
+
+//If the element whose position you ask for is not in the array, 
+//JavaScript returns -1.
+colors.indexOf("Purple");
+// -1
+
+//If the element appears more than once in the array, 
+//the indexOf method will return the first index of that element in the array.
+
+var insects = ["Bee", "Ant", "Bee", "Ant"];
+insects.indexOf("Bee");
+// 0
+
+
+// Turning an Array into a String
+// You can use .join() to join all the elements 
+// in an array together into one big string.
+
+var boringAnimals = [" Monkey", "Cat", "Fish", "Lizard"];
+boringAnimals.join();
+// "Monkey,Cat,Fish,Lizard"
+
+
+// You can use .join(separator) 
+// to do the same thing, but with your own chosen separator between each value.
+
+var boringAnimals = ["Monkey", "Cat", "Fish", "Lizard"]; 
+boringAnimals.join(" - ");
+//"Monkey - Cat - Fish - Lizard"
+boringAnimals.join("*")
+//"Monkey*Cat*Fish*Lizard" 
+boringAnimals.join(" sees ")
+//"Monkey sees Cat sees Fish sees Lizard"
+
+// Another .join example
+var myNames = ["Nicholas", "Andrew", "Maxwell", "Morgan"];
+myNames.join(" ");
+// "Nicholas Andrew Maxwell Morgan"
