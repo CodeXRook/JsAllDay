@@ -213,3 +213,118 @@ boringAnimals.join(" sees ")
 var myNames = ["Nicholas", "Andrew", "Maxwell", "Morgan"];
 myNames.join(" ");
 // "Nicholas Andrew Maxwell Morgan"
+
+
+// Useful Things to Do with Arrays
+// Building the Array with push
+// AKA Last In, First Out (LIFO).
+var landmarks = [];
+landmarks.push("My house");
+landmarks.push("Front path");
+landmarks.push("Flickering streetlamp");
+landmarks.push("Leaky fire hydrant");
+landmarks.push("Fire station");
+landmarks.push("Cat rescue center");
+landmarks.push("My old school");
+landmarks.push("My friend's house");
+landmarks;
+//(8)["My house", "Front path", "Flickering streetlamp", "Leaky fire hydrant", "Fire station", "Cat rescue center", "My old school", "My friend's house"]
+
+// Going in Reverse with pop
+
+landmarks.pop();
+"My friend's house" 
+landmarks.pop();
+"My old school" 
+landmarks.pop(); 
+"Cat rescue center" 
+landmarks.pop(); 
+"Fire station" 
+landmarks.pop(); 
+"Leaky fire hydrant"
+landmarks.pop();
+"Flickering streetlamp" 
+landmarks.pop();
+"Front path" 
+landmarks.pop();
+"My house"
+
+
+// Decision Maker
+// We can use arrays in JavaScript 
+// to build a program to make decisions for us
+// (like a Magic 8-Ball).
+// using Math.random()
+
+
+
+/* It’s important to note that Math.random() 
+always returns a num- ber less than 1 and will never return 1 itself 
+*/ 
+
+Math.random();
+0.8945409457664937
+Math.random();
+0.3697543195448816
+Math.random();
+0.48314980138093233
+
+/* If you want a bigger number, 
+just multiply the result of calling Math.random(). 
+For example, if you wanted numbers between 0 and 10, 
+you would multiply Math.random() by 10:
+*/
+
+Math.random() * 10;
+7.648027329705656
+Math.random() * 10;
+9.7565904534421861
+Math.random() * 10;
+0.21483442978933454
+
+
+// Rounding Down with Math.floor()
+ /* Math.floor(). takes a number and rounds 
+ it down to the whole number below it 
+ (basically getting rid of everything after the decimal point). 
+ */
+
+Math.floor(3.7463463);
+3
+Math.floor(9.9999);
+9
+Math.floor(0.793423451963426);
+0
+
+// The Complete Decision Maker
+
+var phrases = [
+   "That sounds good",
+   "Yes, you should definitely do that",
+   "I'm not sure that's a great idea",
+   "Maybe not today",
+   "Computer says no."
+];
+
+// Should I have another milkshake? 
+phrases[Math.floor(Math.random() * 5)]; 
+"I'm not sure that's a great idea"
+// Should I do my homework?
+ phrases[Math.floor(Math.random() * 5)]; 
+ "Maybe not today?"
+
+ // Creating a Random Insult Generator
+ var randomBodyParts = ["Face", "Nose", "Hair"];
+ var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+ var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"]
+ // Pick a random body part from the randomBodyParts array:
+ var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+ // Pick a random adjective from the randomAdjectives array:
+ var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+ // Pick a random word from the randomWords array:
+ var randomWord = randomWords[Math.floor(Math.random() * 5)];
+ // Join all the random strings into a sentence:
+ var randomInsult = " Your " + randomBodyPart + " is like a " +
+randomAdjectives + " " + randomWord + "!!!";
+randomInsult;
+// " Your Hair is like a Smelly,Boring,Stupid Stick!!!"
