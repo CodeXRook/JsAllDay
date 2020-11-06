@@ -328,3 +328,11 @@ phrases[Math.floor(Math.random() * 5)];
 randomAdjectives + " " + randomWord + "!!!";
 randomInsult;
 // " Your Hair is like a Smelly,Boring,Stupid Stick!!!"
+
+// If you wanted to be really clever, you could replace linew with this:
+var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
+
+// Here’s another way to build up our random insult:
+var randomInsult = ["Your", randomBodyPart, "is", "like", "a", randomAdjective, randomWord + "!!!"].join(" ");
+"Your Hair is like a Smelly Fly!!!"
+
