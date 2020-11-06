@@ -103,3 +103,31 @@ animals["cod", "IceFish", "BearFace"]
 animals.unshift("Tiger");
 
 // Removing elements from an Array
+/*  To remove the last element from an array, 
+you can pop it off by adding .pop() 
+to the end of the array name
+*/
+
+animals ["Polar Bear", "Monkey", "Cat", "Dog", "Llama"]
+var lastAnimal = animals.pop();
+lastAnimal;
+// "Llama"
+
+animals;
+["Polar Bear", "Monkey", "Cat", "Dog"]
+
+//To remove and return the first element of an array, use .shift():
+
+var animals = ["Llama", "Polar Bear", "Monkey", "Cat"]
+animals; 
+// (4) ["Llama", "Polar Bear", "Monkey", "Cat"]
+
+var firstAnimal = animals.shift();
+firstAnimal;
+// "Llama"
+
+animals;
+(3) ["Polar Bear", "Monkey", "Cat"]
+
+
+//Adding Arrays
