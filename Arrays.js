@@ -336,3 +336,27 @@ var randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
 var randomInsult = ["Your", randomBodyPart, "is", "like", "a", randomAdjective, randomWord + "!!!"].join(" ");
 "Your Hair is like a Smelly Fly!!!"
 
+/* More Sophisticated Insults
+Extend the random insult generator so it generates insults 
+like “Your [body part] is more [adjective] 
+than a [animal]’s [animal body part].” 
+(Hint: You’ll need to create another array.)
+ */
+
+var myCarParts = ["Hood", "Side Door", "Backseat"];
+var dislikes = ["Stinky", "Gas Intake", "Cheap"];
+var animalParts = [ "Tail", "Donkey Ass", "Ears", "Pork Belly", "Pig Feet"];
+var animal = ["Tiger", "Donkey", "Pig", "Cow", "Horse", "Goat" ];
+var randomWords = ["New Car", "Tesla", "Oh Shit", "Fuck Yeah", "Donald Trump", "Biden"];
+
+var randomCarPart = myCarParts[Math.floor(Math.random() * 3)];
+var randomDislikes = dislikes[Math.floor(Math.random() * 3)];
+var randomWord = randomWords[Math.floor(Math.random() * 6)];
+var animals = animal[Math.floor(Math.random() * 6)];
+var randomAnimalPart = animalParts[Math.floor(Math.random() * 6)];
+
+var dissMe = " Your " + randomCarPart + " is more " + randomDislikes + " than a " + animals + " " + randomAnimalPart + " you " + randomWord + "!!!";
+
+dissMe;
+
+//-----------------------------------------------------------------
