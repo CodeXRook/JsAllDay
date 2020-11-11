@@ -61,14 +61,14 @@ Object.keys(cat);
 //but it uses curly brackets, { }, instead of square brackets:
 
 
-var object = {};
-
 var cat = {};
 cat["legs"] = 3;
 cat["name"] = "Harmony";
 cat["color"] = "Tortoiseshell";
+
 cat;
-{ color: "Tortoiseshell", legs: 3, name: "Harmony" }
+// { color: "Tortoiseshell", legs: 3, name: "Harmony" }
+
 
 // Adding Keys with Dot Notation
 
@@ -76,7 +76,6 @@ var cat = {};
 cat.legs = 3;
 cat.name = "Harmony"; 
 cat.color = "Tortoiseshell";
-
 
 var dog = {
 name: "Pancake", 
@@ -87,7 +86,6 @@ dog.isBrown;
 undefined
 
 // Combining Arrays and objects
-
 var dinosaurs = [
     { name: "Tyrannosaurs Rex", period: "Late Cretaceous"},
     { name: "Stegosaurus", period: "Late Jurassic"},
@@ -157,3 +155,17 @@ var cars = {
     format: "Blue-ray"
     };
     movies["Cars"] = cars;
+
+
+
+// Say you had the following object:
+var myCrazyObject = {
+    "name": "A ridiculous object",
+    "some array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+     "random animal": "Banana Shark"
+    };
+/* How would you get the number 123 out of this object
+ using one line of JavaScript?
+ */
+myCrazyObject["some array"][2]["number"];
+// 123
