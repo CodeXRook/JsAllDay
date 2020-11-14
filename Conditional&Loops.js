@@ -81,7 +81,7 @@ console.log("Zzzzzzzzzzzzz");
 then sheepCounted would remain 0, 
 and the output would look like this: 
 */
-
+// Expected outout
 /* I have counted 0 sheep! 
    I have counted 0 sheep! 
    I have counted 0 sheep! 
@@ -121,8 +121,86 @@ var name = "CodeX";
 for ( var i = 0; i < name.length; i++) {
     console.log("My name contains the letter " + name[i] + ".");
 }
+// Expected outout
 // My name contains the letter C. 
 // My name contains the letter o. 
 // My name contains the letter d. 
 // My name contains the letter e. 
 // My name contains the letter X. 
+
+
+// other Ways to use for loops
+// here’s a way to print all the powers of 2 
+// below the number 10,000:
+
+for (var x = 2; x < 100000; x = x * 2) {
+    console.log(x);
+}
+
+// Expected outout
+/*
+2
+4
+8
+16
+32
+64
+128
+256
+512
+1024
+2048
+4096
+8192
+16384
+32768
+*/
+
+//---------------------------------------------
+
+// Write a loop to print the powers of 3 under 10,000 
+// (it should print 3, 9, 27,
+
+for (var x = 3; x < 10000; x = x * 3) {
+    console.log(x);
+}
+// Expected outout
+/*   
+3
+9
+27
+81
+243
+729
+2187
+6561
+*/
+
+/*
+Write a for loop that modifies an array of animals, 
+making them awesome!
+*/
+
+var animals = ["Cat", "Fish", "Lemur", "Komodo Dragon"];
+for (var i = 0; i < animals.length; i++) {
+    console.log(animals[i] = "Awesome " + animals[i]);
+} 
+// Expected Result
+/*
+Awesome Cat
+Awesome Fish
+Awesome Lemur
+Awesome Komodo Dragon
+*/
+
+//-------------------------------------------------------
+
+// Make a random string generator. 
+// You’ll need to start with a string 
+// containing all the letters in the alphabet
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+alphabet[Math.floor(Math.random() * alphabet.length)];
+
+// Damm I still feel like i'm off here, 
+// where do i use square brackets to get the character at that index?
