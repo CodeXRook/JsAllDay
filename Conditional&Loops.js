@@ -202,5 +202,57 @@ Awesome Komodo Dragon
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 alphabet[Math.floor(Math.random() * alphabet.length)];
 
+//////////////////////////////////////////////////////
+//PART2
 // Damm I still feel like i'm off here, 
 // where do i use square brackets to get the character at that index?
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz"; 
+
+// To create the random string, start with an empty string
+var randomString = "";
+
+// Then, create a while loop that will continually add new random letters to this string, as long as the string length is less than 6 (or any length you choose). 
+while (randomString.length < 6) {
+
+// pick a random letter from this string
+ var randomIndex = Math.floor(Math.random() * alphabet.length);
+
+// Use square brackets to get the character at that index. 
+ var randomChar = alphabet[randomIndex];
+
+// Use the += operator to add a new letter to the end of the string. 
+ randomString += randomChar;
+}
+// After the loop has finished, log it to the console!
+console.log(randomString);
+
+///////////----------------------------------------
+
+
+// h4ck3r sp34k
+// Turn text into h4ck3r sp34k
+
+var input = "javascript is awesome";
+var output = "";
+ for (var x = 0; x < input.length; x++){
+    if (input[x] === "a") {
+        output += "4";
+    }
+    else if (input[x] === "e") {
+        output += "3";
+    }
+    else if (input[x] === "i") {
+        output += "1";
+    }
+    else if (input[x] === "o") {
+        output += "0";
+    }
+    else if (input[x] === "s") {
+        output += "s";
+    }
+     else {
+        output += input[x];
+    }
+}
+console.log(output);
