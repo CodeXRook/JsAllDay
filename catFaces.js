@@ -1,4 +1,4 @@
-// Draw as many cats as y ou want!
+// Draw as many cats as you want!
 
 var drawCats = function (howManyTimes) {
     for (var i = 0; i <  howManyTimes; i++) {
