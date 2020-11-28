@@ -26,3 +26,14 @@ var printMultipleTimes = function(howManyTimes, whatToDraw) {
 printMultipleTimes(7, "|*_*|");
 
 //------------------------------
+var double = function(number) {
+    return number * 2;
+   };
+   double(6);
+   // 12
+
+
+ //----------------------------------  
+
+
+ 
