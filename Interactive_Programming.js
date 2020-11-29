@@ -35,3 +35,8 @@ clearTimeout(timeoutId);
 
 
 // ------------------------------------------------------
+// Calling Code Multiple Times with setInterval
+
+// You call setInterval with two arguments: 
+// the function you want to call and the length of the interval (in milliseconds)
+
