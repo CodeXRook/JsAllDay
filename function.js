@@ -47,3 +47,63 @@ var double = function(number) {
  }
 generateRandomInsult();
  
+
+//--------------------------------------
+
+// leaving a function early with return
+
+/* 
+If the name passed
+to the function has fewer than five characters, 
+the function uses return to leave the function imme- diately. 
+This means the return statement at the end, 
+which tells you the fifth letter of your name, 
+is never executed.
+*/
+
+var fifthLetter = function (name) {
+    if (name.length < 5) {
+      return "The Letter in my first name is " + name[0] + " ! ";
+    }
+     return "The fifth letter of your name is " + name[4] + ".";
+   };
+   fifthLetter("DanB");
+   //"The Letter in my first name is D ! "
+
+//----------------------------------------
+
+// using return Multiple Times Instead of if...else Statements
+
+var medalForScore = function (score){
+    if (score < 3) {
+        return "Bronze";
+    }
+    if (score < 7) {
+        return "Silver";
+    }
+
+    return "Gold";
+};
+medalForScore(25);
+// "Gold"
+
+//----------------------------------------
+
+// Shorthand for Creating functions 
+
+// Long Hand version of functions
+var double = function (number) {
+    return number * 2;
+};
+
+// Short Hand version of functions
+
+function double (number) {
+    return number * 2;
+};
+
+// Fat arrow function
+
+double = (number) => {
+    return number * 2;
+};
