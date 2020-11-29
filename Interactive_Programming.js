@@ -40,3 +40,15 @@ clearTimeout(timeoutId);
 // You call setInterval with two arguments: 
 // the function you want to call and the length of the interval (in milliseconds)
 
+var counter = 1;
+
+var printMessage = function () {
+    console.log("You have been staring at you console for " + counter + "second");
+      counter++;
+};
+ 
+var intervalId = setInterval(printMessage, 1000);
+printMessage();
+
+
+//-------------------------------------------
