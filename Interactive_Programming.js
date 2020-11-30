@@ -48,7 +48,44 @@ var printMessage = function () {
 };
  
 var intervalId = setInterval(printMessage, 1000);
-printMessage();
+clearInterval(intervalId);
 
 
 //-------------------------------------------
+
+// Animating elements with setInterval
+var leftOffset = 0;
+
+    var moveHeading = function () {
+        $("#heading").offset({ left: leftOffset });
+
+        leftOffset++;
+
+        if(leftOffset > 200) {
+            leftOffset = 0;
+        }
+    };
+
+    setInterval(moveHeading, 30);
+
+//--------------------------------------------
+
+// Responding to user Actions
+// Responding to Clicks
+
+var clickHandler = function (event) {
+    console.log("Click!" + event.pageX + " " + event.pageY);
+};
+  
+  $("h1").click(clickHandler);
+
+  //------------------------------------------
+  // The mousemove event
+
+  $("html").mousemove(function (event) {
+    $("#heading").offset({
+      left: event.pageX,
+      top: event.pageY
+}); });
+
+//----------------------------------------------
