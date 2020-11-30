@@ -83,9 +83,10 @@ var clickHandler = function (event) {
   // The mousemove event
 
   $("html").mousemove(function (event) {
-    $("#heading").offset({
-      left: event.pageX,
-      top: event.pageY
-}); });
+      $("#heading").offset({
+          left: event.pageX,
+          top: event.pageY
+      });
+  });
 
-//----------------------------------------------
+//---------------------------------------------
