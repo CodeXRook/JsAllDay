@@ -31,7 +31,8 @@
       return Math.sqrt((diffX * diffX) + (diffY * diffY));
 };
 
-
+ 
+  
   // Get a string representing the distance
   var getDistanceHint = function (distance) {
     if (distance < 10) {
@@ -46,15 +47,24 @@
        return "Cold";
      } else if (distance < 320) {
        return "Really cold";
-     } else {
-       return "Freezing!";
-    } 
+     } else if (distance < 400) {
+       return "Really really cold!";
+    } else if (distance < 550) {
+        return "Yo,bro it's brick!";
+    } else if (distance < 680) {
+        return "Bro wtf wrong way";
+    } else if (distance < 750) {
+        return "FUCK IS WRONG WITH YOU? WRONG WAY!";
+    } else {
+        return "Aight, Fuck this shit, I'm going home";
+    }
   };
     
    // Set up our variables
-   var width = 400; 
-   var height = 400; 
+   var width = 800; 
+   var height = 800; 
    var clicks = 0;
+   
 
    // Create a random target location
    var target = {
@@ -62,28 +72,32 @@
    y: getRandomNumber(height)
 };
 
+
     // Add a click handler to the img element
     $("#map").click(function (event) {
-        // Click handler code goes here
-    });
+        clicks++;
 
-    
     // Get distance between click event and target
     var distance = getDistance(event, target);
     // Convert distance to a hint
     var distanceHint = getDistanceHint(distance);
     
-
     // Update the #distance element with the new hint
-
-  
-    var distance =  gettDistance(event, target);
-    var distanceHint = getDistanceHint(distance);
     $("#distance").text(distanceHint);
-
-    if (distance < 8) {
+  
+   // If the click was close enough, tell them they won
+   if (distance < 8) {
     alert("Found the treasure in " + clicks + " clicks!");
-}
+   }
+
+   // Click limit
+   if(clicks === 10){
+       alert("GAME OVER, NO MORE CLICKS");
+   }
+
+});
+
+
 </script>
 
 
