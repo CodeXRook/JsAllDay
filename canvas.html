@@ -16,7 +16,31 @@
             }
            
 
-            
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "Red";
+            ctx.fillRect(0, 0, 100, 100);
+
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.strokeRect(10, 10, 100, 20);
+
+           var canvas = document.getElementById("canvas");
+           var ctx = canvas.getContext("2d");
+           ctx.strokeStyle = "DeepPink";
+           ctx.lineWidth = 4;
+           ctx.strokeRect(10, 10, 100, 20);
+
+           var canvas = document.getElementById("canvas");
+           var ctx = canvas.getContext("2d");
+           ctx.strokeStyle = "Black";
+           ctx.lineWidth = 4;
+           ctx.beginPath();
+           ctx.moveTo(10, 10);
+           ctx.lineTo(60, 60);
+           ctx.moveTo(60, 10);
+           ctx.lineTo(10, 60);
+           ctx.stroke();
 
         </script>
 
