@@ -28,7 +28,14 @@
 };
 
    
-
+  var drawScore = function () {
+    ctx.font = "20px Courier";
+    ctx.fillStyle = "Black";
+    ctx.textAlign = "left";
+    ctx.textBaseline = "top";
+    ctx.fillText("Score: " + score, blockSize, blockSize);
+   };
+  
 
 
 </script>
