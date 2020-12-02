@@ -42,6 +42,60 @@
            ctx.lineTo(10, 60);
            ctx.stroke();
 
+
+
+          var canvas = document.getElementById("canvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "SkyBlue";
+          ctx.beginPath();
+          ctx.moveTo(100, 100);
+          ctx.lineTo(100, 60);
+          ctx.lineTo(130, 30);
+          ctx.lineTo(160, 60);
+          ctx.lineTo(160, 100);
+          ctx.lineTo(100, 100);
+          ctx.fill();
+
+
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = "Green";
+          ctx.beginPath();
+          ctx.arc(50, 50, 20, 0, Math.PI / 2, false);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(100, 50, 20, 0, Math.PI, false);
+          ctx.stroke();
+
+          ctx.beginPath();
+          ctx.arc(150, 50, 20, 0, Math.PI * 2, false);
+          ctx.stroke();
+
+
+          var circle = function (x, y, radius) {
+              ctx.beginPath();
+              ctx.arc(x, y, radius, 0, Math.PI * 2, false );
+              ctx.stroke();
+          };
+
+
+              ctx.lineWidth = 4;
+              ctx.strokeStyle = "Red";
+              circle(100, 100, 10);
+              ctx.strokeStyle = "Orange";
+              circle(100, 100, 20);
+              ctx.strokeStyle = "Yellow";
+              circle(100, 100, 30);
+              ctx.strokeStyle = "Green";
+              circle(100, 100, 40);
+              ctx.strokeStyle = "Blue";
+              circle(100, 100, 50);
+              ctx.strokeStyle = "Purple";
+              circle(100, 100, 60);
+
+
+
+
+
         </script>
 
 
