@@ -213,7 +213,17 @@
     var snake = new Snake();
     var apple = new Apple();
 
+    // Pass an animation function to setInterval
+    var intervalId = setInterval(function () {
+      ctx.clearRect(0, 0, width, height);
+      drawScore();
+      snake.move();
+      snake.draw();
+      apple.draw();
+      drawBorder();
+    }, 100);
 
+    
 
 
 </script>
