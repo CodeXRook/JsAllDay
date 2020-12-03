@@ -120,6 +120,15 @@
       }
     };
 
+    // Create a new head and add it to the beginning of
+    // the snake to move the snake in its current direction
+    Snake.prototype.move = function (){
+      var head = this.segments[0];
+      var newHead;
+
+      this.direction = this.nextDirection;
+    }
+
 
 </script>
 
