@@ -56,7 +56,27 @@
     ctx.fillText("Game Over", width / 2, height / 2);
   };
 
-  
+
+  // Draw a circle (using the function from Chapter 14)
+  var circle = function (x, y, radius, fillCircle) {
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+    if (fillCircle) {
+      ctx.fill();
+    } else {
+      ctx.stroke();
+    }
+  };
+
+
+   // The Block constructor
+   var Block = function (col, row) {
+     this.col = col;
+     this.row = row;
+   };
+
+
+   
 
 
 </script>
