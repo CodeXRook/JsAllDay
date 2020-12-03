@@ -50,6 +50,36 @@ var Block = function (col, row) {
   this.row = row;
 };
 
+
+Block.prototype.drawSquare = function  (color) {
+  var x = this.col * blockSize;
+  var y = this.row * blockSize;
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, blockSize, blockSize);
+};
+
+Block.prototype.drawCircle = function (color){
+  var centerX = this.col * blockSize + blockSize / 2;
+  var centerY = this.row * blockSize + blockSize / 2;
+  ctx.fillStyle = color;
+  circle(centerX, centerY, blockSize / 2, true);
+};
+
+Block.prototype.equal = function (otherBlock) {
+  return this.col === otherBlock.col && this.row === otherBlock.row;
+};
+
+var Snake = function () {
+  this.segments = [
+    new Block(7, 5),
+    new Block(6, 5),
+    new Block(5, 5)
+  ];
+
+  this.direction = "right";
+  this.nextDirection = "right";
+};
+
 </script>
 
   </body>
