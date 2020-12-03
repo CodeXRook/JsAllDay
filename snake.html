@@ -144,6 +144,21 @@
       }
 
       this.segments.unshift(newHead);
+
+      if (newHead.equal(apple.position)) {
+        score++;
+        apple.move();
+      } else {
+        this.segments.pop();
+      }
+    };
+
+    // Check if the snake's new head has collided with the wall itself
+    Snake.prototype.checkCollision = function (head){
+      var leftCollision = (head.col === 0);
+      var topCollision = (head.row === 0);
+      var rightCollision = (head.col === widthInBlocks - 1);
+      var bottomCollision = (head.row === heightInBlocks - 1);
     }
 
 
