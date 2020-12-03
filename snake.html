@@ -175,7 +175,7 @@
     };
 
     // Set the snake's next direction based on the keyboard
-    Snake.prototype.setDirection = funciton (newDirection) {
+    Snake.prototype.setDirection = function (newDirection) {
       if (this.direction === "up" && newDirection === "down") {
         return;
       } else if (this.direction === "right" && newDirection === "left") {
@@ -187,6 +187,12 @@
       }
 
       this.nextDirection = newDirection;
+    };
+
+
+    // The Apple constructor
+    var Apple = function () {
+      this.position = new Block(10, 10);
     };
 
 
